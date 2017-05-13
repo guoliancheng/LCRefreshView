@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="psL-qf-gKs" customClass="LCRefreshView" customModule="刷新控件" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="199" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableview_pull_refresh" translatesAutoresizingMaskIntoConstraints="NO" id="2W4-k3-KQB">
+                    <rect key="frame" x="0.0" y="22.5" width="32" height="32"/>
+                </imageView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="WIN-31-YTv">
+                    <rect key="frame" x="6" y="28.5" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="下拉刷新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXc-8q-Hwu">
+                    <rect key="frame" x="65" y="28" width="94" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2W4-k3-KQB" firstAttribute="centerY" secondItem="psL-qf-gKs" secondAttribute="centerY" id="1rd-H0-0cF"/>
+                <constraint firstItem="2W4-k3-KQB" firstAttribute="leading" secondItem="psL-qf-gKs" secondAttribute="leading" id="2fv-Pe-863"/>
+                <constraint firstItem="QXc-8q-Hwu" firstAttribute="centerY" secondItem="WIN-31-YTv" secondAttribute="centerY" id="UOL-Cz-wsx"/>
+                <constraint firstItem="WIN-31-YTv" firstAttribute="centerX" secondItem="2W4-k3-KQB" secondAttribute="centerX" id="oHF-OG-MYV"/>
+                <constraint firstItem="WIN-31-YTv" firstAttribute="centerY" secondItem="2W4-k3-KQB" secondAttribute="centerY" id="qK3-yr-sOD"/>
+                <constraint firstItem="QXc-8q-Hwu" firstAttribute="leading" secondItem="2W4-k3-KQB" secondAttribute="trailing" constant="33" id="rHL-Fc-TNn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="indicator" destination="WIN-31-YTv" id="YHu-xc-fOa"/>
+                <outlet property="tipIcon" destination="2W4-k3-KQB" id="vfX-nP-DLT"/>
+                <outlet property="tipLabel" destination="QXc-8q-Hwu" id="9tO-6a-0c0"/>
+            </connections>
+            <point key="canvasLocation" x="-56.5" y="-364.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tableview_pull_refresh" width="32" height="32"/>
+    </resources>
+</document>

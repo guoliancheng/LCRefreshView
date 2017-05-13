@@ -13,10 +13,10 @@
 		5A5A56EC1EB61D6400582435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A56EB1EB61D6400582435 /* AppDelegate.swift */; };
 		5A5A56EE1EB61D6400582435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A56ED1EB61D6400582435 /* ViewController.swift */; };
 		5A5A56F11EB61D6400582435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5A56EF1EB61D6400582435 /* Main.storyboard */; };
-		5A5A56F31EB61D6400582435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5A56F21EB61D6400582435 /* Assets.xcassets */; };
 		5A5A56F61EB61D6400582435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5A56F41EB61D6400582435 /* LaunchScreen.storyboard */; };
 		5A5A57011EB61D6400582435 /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A57001EB61D6400582435 /* ____Tests.swift */; };
 		5A5A570C1EB61D6400582435 /* ____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A570B1EB61D6400582435 /* ____UITests.swift */; };
+		5AE1A5171EC68D380022496D /* LCRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5AE1A5161EC68D380022496D /* LCRefresh.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		5A5A56EB1EB61D6400582435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A5A56ED1EB61D6400582435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A5A56F01EB61D6400582435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5A5A56F21EB61D6400582435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A5A56F51EB61D6400582435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A5A56F71EB61D6400582435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A5A56FC1EB61D6400582435 /* 刷新控件Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "刷新控件Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +52,7 @@
 		5A5A57071EB61D6400582435 /* 刷新控件UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "刷新控件UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5A570B1EB61D6400582435 /* ____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____UITests.swift"; sourceTree = "<group>"; };
 		5A5A570D1EB61D6400582435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE1A5161EC68D380022496D /* LCRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCRefresh.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +83,7 @@
 		5A09EA0C1EBA225C00FD9351 /* Refresh */ = {
 			isa = PBXGroup;
 			children = (
+				5AE1A5161EC68D380022496D /* LCRefresh.bundle */,
 				5A09EA0D1EBA225C00FD9351 /* LCRefreshControl.swift */,
 				5A09EA0E1EBA225C00FD9351 /* LCRefreshView.swift */,
 				5A09EA0F1EBA225C00FD9351 /* LCRefreshView.xib */,
@@ -117,7 +118,6 @@
 				5A5A56EB1EB61D6400582435 /* AppDelegate.swift */,
 				5A5A56ED1EB61D6400582435 /* ViewController.swift */,
 				5A5A56EF1EB61D6400582435 /* Main.storyboard */,
-				5A5A56F21EB61D6400582435 /* Assets.xcassets */,
 				5A5A56F41EB61D6400582435 /* LaunchScreen.storyboard */,
 				5A5A56F71EB61D6400582435 /* Info.plist */,
 			);
@@ -252,8 +252,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE1A5171EC68D380022496D /* LCRefresh.bundle in Resources */,
 				5A5A56F61EB61D6400582435 /* LaunchScreen.storyboard in Resources */,
-				5A5A56F31EB61D6400582435 /* Assets.xcassets in Resources */,
 				5A5A56F11EB61D6400582435 /* Main.storyboard in Resources */,
 				5A09EA121EBA225C00FD9351 /* LCRefreshView.xib in Resources */,
 			);

@@ -142,7 +142,10 @@ class LCRefreshControl: UIControl {
         var inset = sv.contentInset
         inset.top -= LCRefreshOffset
         
-        sv.contentInset = inset
+        UIView.animate(withDuration: 0.25) {
+            sv.contentInset = inset
+        }
+        
     }
     
     
